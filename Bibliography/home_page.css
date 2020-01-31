@@ -1,0 +1,16 @@
+html {
+    background: #e6e9e9;
+    background-image:;
+}
+
+body {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1em 2em 4em; /* Height, Left/Right, Bottom (all in em, "emphemeral unit" which is relative to the to the current font size)*/
+}

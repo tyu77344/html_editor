@@ -1,0 +1,60 @@
+html {
+  font: 5vmin/1.3 Serif;
+  overflow: hidden;
+  background: #123;
+}
+
+head {
+  display:block;
+  font-size: 52px;
+  color: transparent;
+}
+
+head::before {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 0em;
+  height: 0em;
+  content: 'Chad';
+  mix-blend-mode: screen;
+  animation: 10s -10s move infinite ease-in-out alternate;
+}
+
+head::before {
+  text-shadow: 0em 0em 7px rgba(49, 255, 0, 0.9), 0.0888203491em -0.0513338438em 7px rgba(132, 0, 255, 0.9);
+  animation-duration: 20s;
+  animation-delay: 1s;
+}
+
+
+html::before {
+  content: "Chad O'Donnell's\A CSS DEMO";
+  letter-spacing: .2em;
+  text-shadow: 0 0 5px #000;
+  white-space: pre;
+  color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #999;
+}
+
+html:first-line {
+  font-size: 300%;
+  font-style: italic;
+  letter-spacing: 0;
+  color: #fff;
+}
+
+@keyframes move {
+  from {
+    transform: rotate(0deg) scale(1) translateX(0px);
+  }
+  to {
+    transform: rotate(360deg) scale(1) translateX(0px);
+  }
+}

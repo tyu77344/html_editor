@@ -12,5 +12,42 @@ body {
     line-height: 1.5;
     margin: 0 auto;
     max-width: 800px;
-    padding: 1em 2em 4em; /* Height, Left/Right, Bottom (all in em, "emphemeral unit" which is relative to the to the current font size)*/
+    padding: 1em 2em .5em; /* Height, Left/Right, Bottom (all in em, "emphemeral unit" which is relative to the to the current font size)*/
+}
+
+h1 {
+    text-align: center;
+}
+
+.paragraph_one { /* Overrides the body class */
+    font-family: cursive;
+    text-align: center;
+    line-height: 12px;
+}
+
+img {
+    /* These statements contains the image's dimensions in the body class's padding */
+    max-width: 100%;
+    padding-top: 10px;
+}
+
+#parent_div_one {
+    max-width:100%;
+    max-height:100%;
+    border:1px solid red;
+    display:flex;
+    align-self: center;
+    padding:20px;
+}
+
+.paragraph_two {
+    text-align: center;
+    border: 1px solid red;
+    margin: 10px;
+}
+
+.paragraph_three {
+    text-align: center;
+    border: 1px solid green;
+    margin: 10px;
 }
